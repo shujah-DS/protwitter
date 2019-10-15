@@ -1,0 +1,52 @@
+@import "../../../styles/variables";
+
+.field-info {
+  padding: 6px;
+
+  &:nth-child(1) {
+    padding-top: 10px;
+  }
+
+  .field-name {
+    @media only screen and (max-width: @screen-sm) {
+      text-align: left;
+    }
+  }
+
+  .field-value {
+    font-weight: bold;
+    word-wrap: break-word;
+
+    p {
+      margin-bottom: 0;
+    }
+    .info-header-icon {
+      cursor: pointer;
+    }
+
+    .display-settings-image {
+      margin-top: -25px;
+
+      @media only screen and (max-width: @screen-sm) {
+        margin-top: 0;
+      }
+
+      .anticon-cross {
+        display: none;
+      }
+    }
+  }
+
+  /* tile uploaded pictures */
+  .upload-list-inline .ant-upload-list-item {
+    float: left;
+    width: 200px;
+    margin-right: 8px;
+  }
+  .upload-list-inline .ant-upload-animate-enter {
+    animation-name: uploadAnimateInlineIn;
+  }
+  .upload-list-inline .ant-upload-animate-leave {
+    animation-name: uploadAnimateInlineOut;
+  }
+}

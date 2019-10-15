@@ -1,0 +1,31 @@
+.list-view {
+  .page-header {
+    .heading {
+      font-weight: 600;
+      font-size: 26px;
+      color: @primary-color;
+      display: inline-block;
+      border-bottom: solid 3px @primary-color;
+    }
+    .filters {
+      text-align: right;
+      > * {
+        width: 200px;
+        margin-left: 10px;
+
+        @media screen and (max-width: @screen-xs) {
+          width: 100%;
+          margin-bottom: 10px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        @media only screen and (max-width: @screen-sm) {
+          padding-top: 10px;
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

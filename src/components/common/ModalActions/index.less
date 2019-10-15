@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+
+.modal-actions {
+  padding: 8px 20px;
+  @media only screen and (max-width: @screen-xs) {
+    .modal-action {
+      min-height: calc(@btn-height-lg + 8px);
+      &:first-child {
+        min-height: @btn-height-lg;
+        height: @btn-height-lg;
+      }
+    }
+    &:last-child {
+      min-height: @btn-height-lg;
+    }
+    padding: 0 20px;
+  }
+}
+.ant-modal-footer {
+  .modal-actions {
+    padding-left: 0;
+    padding-right: 0;
+    @media only screen and (max-width: @screen-xs) {
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+}

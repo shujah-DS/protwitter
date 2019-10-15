@@ -1,0 +1,28 @@
+@import "./variables";
+
+.ant-table {
+  thead {
+    tr {
+      th,
+      th.ant-table-column-sort {
+        background-color: #dddddd;
+        .anticon {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .ant-table-tbody {
+    tr {
+      &:hover {
+        td.ant-table-column-sort {
+          background: @table-row-hover-bg;
+        }
+      }
+    }
+  }
+}
+
+.ant-divider-horizontal {
+  margin: 12px 0;
+}

@@ -1,0 +1,65 @@
+@import "../variables";
+.stats-summary {
+  margin: 10px 0;
+  .stats-heading {
+    font-size: 22px;
+    @media only screen and (max-width: @screen-xs) {
+      font-size: 20px;
+    }
+    color: @primary-color;
+    padding: 10px 0;
+    .filter .ant-select {
+      width: 160px;
+    }
+  }
+  .ant-divider {
+    margin: 0;
+  }
+  .stats {
+    border-radius: 4px;
+    border: solid 1px @border-color-base;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-height: 132px;
+    .ant-spin {
+      position: absolute;
+      left: 48.7%;
+    }
+    @media only screen and (max-width: @screen-xs) {
+      flex-direction: column;
+      .ant-spin {
+        left: 48%;
+        top: 48%;
+      }
+    }
+    .stat-box {
+      flex: 1;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 120px;
+
+      margin: 5px;
+      .count {
+        font-size: 28px;
+        font-weight: 600;
+        height: 60px;
+        padding-top: 30px;
+      }
+      .count-label {
+        font-size: 16px;
+        font-weight: 500;
+        padding-top: 10px;
+      }
+    }
+    .ant-divider {
+      height: 110px;
+      padding: 0 !important;
+      @media only screen and (max-width: @screen-xs) {
+        height: 1px;
+        width: 90%;
+      }
+    }
+  }
+}

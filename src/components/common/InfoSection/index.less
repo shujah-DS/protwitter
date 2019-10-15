@@ -1,0 +1,27 @@
+.info-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  .section-content {
+    width: 700px;
+
+    @media only screen and (max-width: @screen-sm) {
+      width: 100%;
+    }
+
+    text-align: center;
+
+    .section-separator {
+      border-bottom: 1px solid @divider-color;
+      margin: 15px 0 15px 0;
+    }
+    .anticon.anticon-cross {
+      display: none;
+    }
+  }
+  .user-info .field-value {
+    word-wrap: break-word;
+    padding-right: 50px !important;
+  }
+}

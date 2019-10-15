@@ -1,0 +1,37 @@
+@import "../variables";
+
+.login-layout {
+  height: 100vh;
+  color: @logo-grey;
+  font-size: 16px;
+}
+
+.sign-in-page {
+  .sign-in-form {
+    margin-top: 250px;
+    @media screen and (max-width: @screen-xs) {
+      margin-top: 0;
+      &.ant-card {
+        height: calc(100vh - 110px);
+        .sign-in-btn {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.adfs-sign-in {
+  width: 400px;
+  .sign-in-heading {
+    color: @primary-color;
+    font-size: 300px;
+    margin-bottom: 0;
+    line-height: 0.9em;
+    margin-top: -34px;
+    margin-left: -10px;
+  }
+  .sign-in-btn {
+    width: 100%;
+  }
+}
